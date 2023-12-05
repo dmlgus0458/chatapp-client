@@ -14,16 +14,20 @@ const InputField = ({message,setMessage,sendMessage}) => {
               onChange={(event) => setMessage(event.target.value)}
               multiline={false}
               rows={1}
+              
             />
-
-            <Button
+            
+            <Button 
+              
               disabled={message === ""}
               type="submit"
               className="send-button"
+              
             >
               전송
             </Button>
           </form>
+          
         </div>
   )
 }
